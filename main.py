@@ -42,3 +42,15 @@ async def getUtlaan(request: Request):
             'hammer':'80c21c1e-bf3d-4937-bd8c-c7af21c292da'
         }
     return data
+
+@app.post("/nytttUtlaan")
+async def nyttUtlaan(request: Request):
+    token=request.headers.get('token')
+    serienummer=request.headers.get('nyttutlaan')
+    if (token != "BWDLZHDFuDUAy4T"):
+        data={'not':'authorized'}
+    else:
+        data={
+            "utlaant":"OK"
+        }
+    return data
