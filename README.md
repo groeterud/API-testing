@@ -36,3 +36,9 @@ test.html - bare tom javascript fil som importer og kjører login.js og api_call
 
 
 Hyl ut om noe er uklart eller trenger videre forklaring. 
+
+
+for å starte: 
+python -m uvicorn main:app --reload
+evt:
+uvicorn main:app --reload
